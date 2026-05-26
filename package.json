@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp index.html style.css siong-logo.png robots.txt sitemap.xml dist/"
+    "build": "mkdir -p dist && cp index.html style.css siong-logo.png favicon.png favicon.ico robots.txt sitemap.xml dist/"
   }
 }
