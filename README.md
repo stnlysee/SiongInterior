@@ -1,50 +1,47 @@
-# Siong Interior & Builder Pte Ltd Website
+# Siong Interior & Builder Website
 
-A GitHub-friendly React + Vite one-page website for Siong Interior & Builder Pte Ltd.
+This is a simple static website for Siong Interior & Builder Pte Ltd.
 
-## Included
+## Why this version is safer
 
-- SEO-friendly title and meta description
-- Open Graph and Twitter preview tags
-- LocalBusiness schema markup
-- robots.txt and sitemap.xml
-- Mobile responsive layout
-- Call-to-action phone links
-- Logo stored as `public/siong-logo.png`
+This version does not require React, Vite, Tailwind or npm build steps.  
+It can be uploaded directly to GitHub, Vercel, Netlify or GitHub Pages.
 
-## Run locally
+## Files included
 
-```bash
-npm install
-npm run dev
-```
+- `index.html` - main website page with SEO meta tags and LocalBusiness schema
+- `style.css` - website styling
+- `siong-logo.png` - logo image
+- `robots.txt` - search engine crawling file
+- `sitemap.xml` - sitemap for SEO
+- `vercel.json` - simple Vercel setting
+- `sem-keywords-and-ads.md` - SEM keyword and ad copy plan
 
-## Build for deployment
+## How to upload to GitHub
 
-```bash
-npm run build
-```
+1. Open your GitHub repo.
+2. Delete old React/Vite files if the site is blank.
+3. Upload all files from this folder directly into the repo root.
+4. Commit changes.
+5. Redeploy on Vercel.
 
-## Deploy options
+## How to deploy on Vercel
 
-Recommended: Vercel or Netlify.
+1. Go to Vercel.
+2. Import the GitHub repo.
+3. For framework preset, choose `Other`.
+4. Leave build command empty.
+5. Output directory should be empty or `/`.
+6. Deploy.
 
-For GitHub Pages, update the canonical URL, sitemap URL and robots.txt URL to your final domain.
+## Important SEO step
 
-## Important SEO setup before going live
+After you buy or connect the real domain, replace all instances of:
 
-Replace `https://www.sionginterior.com/` in these files with the actual live website URL:
+`https://www.sionginterior.com/`
+
+with the real domain in:
 
 - `index.html`
-- `public/robots.txt`
-- `public/sitemap.xml`
-
-## SEM notes
-
-This site is structured for search ads with strong CTA sections, phone links and service keywords such as:
-
-- exhibition carpentry Singapore
-- interior carpentry Singapore
-- booth fabrication Singapore
-- custom fabrication Singapore
-- carpentry contractor Singapore
+- `robots.txt`
+- `sitemap.xml`
