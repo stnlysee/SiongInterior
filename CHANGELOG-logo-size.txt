@@ -1,0 +1,7 @@
+Top bar logo increased.
+
+Desktop header logo height: 140px
+Mobile header logo height: 95px
+
+Main edited file:
+style.css

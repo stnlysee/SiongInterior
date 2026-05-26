@@ -1,24 +1,8 @@
 {
-  "name": "siong-interior-builder-website",
-  "private": true,
+  "name": "siong-interior-static-website",
   "version": "1.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "framer-motion": "latest",
-    "lucide-react": "latest"
-  },
-  "devDependencies": {
-    "tailwindcss": "latest",
-    "postcss": "latest",
-    "autoprefixer": "latest"
+    "build": "mkdir -p dist && cp index.html style.css siong-logo.png robots.txt sitemap.xml dist/"
   }
 }

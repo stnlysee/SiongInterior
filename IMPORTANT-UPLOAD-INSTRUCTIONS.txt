@@ -1,0 +1,19 @@
+Upload all files in this folder directly into the GitHub repo root.
+
+Important:
+1. Delete old React/Vite files first:
+   - src folder
+   - public folder
+   - old package.json
+   - package-lock.json
+   - tailwind.config.js
+   - postcss.config.js
+   - vite.config.js
+
+2. Then upload this new set of files.
+
+3. Vercel should use:
+   Build Command: npm run build
+   Output Directory: dist
+
+This version has a simple static build, so Vercel should not fail from Tailwind or React.

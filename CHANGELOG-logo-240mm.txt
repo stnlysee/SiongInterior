@@ -1,0 +1,1 @@
+Logo background removed, transparent whitespace cropped tightly, and top bar logo set to width: 240mm with no added padding.
