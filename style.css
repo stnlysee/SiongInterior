@@ -48,7 +48,7 @@ img {
 .header-inner {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
-  min-height: 78px;
+  min-height: 86px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,9 +62,8 @@ img {
 }
 
 .brand img {
-  height: 60px;
-  width: auto;
-  max-width: 260px;
+  width: clamp(210px, 26vw, 360px);
+  height: auto;
   display: block;
 }
 
@@ -428,21 +427,12 @@ h3 {
 
 @media (max-width: 980px) {
   .header-inner {
-  width: min(var(--container), calc(100% - 40px));
-  margin: 0 auto;
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
+    min-height: 76px;
+  }
 
   .brand img {
-  height: 60px;
-  width: auto;
-  max-width: 260px;
-  display: block;
-}
+    width: clamp(190px, 34vw, 300px);
+  }
 
   .nav {
     gap: 16px;
@@ -470,19 +460,12 @@ h3 {
 
 @media (max-width: 760px) {
   .header-inner {
-  width: min(var(--container), calc(100% - 40px));
-  margin: 0 auto;
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
+    width: min(100% - 28px, var(--container));
+    min-height: 70px;
+  }
 
   .brand img {
-    height: 52px;
-    width: auto;
-    max-width: 220px;
+    width: min(68vw, 260px);
   }
 
   .nav,
@@ -527,9 +510,7 @@ h3 {
 
 @media (max-width: 420px) {
   .brand img {
-    height: 48px;
-    width: auto;
-    max-width: 200px;
+    width: min(72vw, 240px);
   }
 
   .hero-inner {
